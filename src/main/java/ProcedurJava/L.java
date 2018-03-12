@@ -1,4 +1,5 @@
 package ProcedurJava;
 
-public class L {
+public class L
+    
 }
