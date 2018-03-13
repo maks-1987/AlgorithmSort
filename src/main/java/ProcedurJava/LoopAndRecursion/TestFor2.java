@@ -6,14 +6,15 @@ package ProcedurJava.LoopAndRecursion;
  * и стоит в правой части присваивания. Требование к циклу: должен быть
  * statement (первое выраж и последнее выраж - тоже), посередине - expression
  * и оно boolean.
- *
+ * a() - будет вызвано всегда один раз, b() - вызовется миним 1 раз и пустит
+ * в ТЕЛО цикла; c() - выполнится если b() - true
  */
-public class TestFor2 {
+class TestFor2 {
     private static int count = 1; // 1, 2, 3
 
     public static void main(String[] args) {
         for (a(); b(); c()) {
-            x();
+            x(); // выполнится только после проверки - b(), затем выполнится c()
         }
     }
 
@@ -22,7 +23,7 @@ public class TestFor2 {
     }
 
     private static boolean b() {
-        System.out.println("2.b");
+        System.out.println("2.b"); // Придя 2-ой раз видит false - заканчив работу прогр
         return count-- > 0; // один раз вернет true, потом только false
     }
 
@@ -34,6 +35,9 @@ public class TestFor2 {
         System.out.println("x");
     }
 }/*
->>> a
-    c
+>>> 1.a
+    2.b
+    x
+    3.c
+    2.b
 */
