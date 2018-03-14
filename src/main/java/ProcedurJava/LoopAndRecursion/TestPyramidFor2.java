@@ -4,7 +4,7 @@ class TestPyramidFor2 {
     public static void main(String[] args) {
         int[] arr = {0, 10, 20, 30, 40};
         for (int i = arr.length - 1; i >=0; i--) {
-        //for (int i = arr.length; i >= 0; i--) { // тфк тоже будет работать
+        //for (int i = arr.length; i >= 0; i--) { // так тоже будет работать
             // на входе в цикл i = 4, т.е. длина массива - 1 = 4
             // на этапе проверки j<=4 цикл запустится еще раз т.к.
             // j может быть меньше и РАВЕН числу i (4)
