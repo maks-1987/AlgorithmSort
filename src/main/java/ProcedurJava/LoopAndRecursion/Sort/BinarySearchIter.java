@@ -1,6 +1,6 @@
 package ProcedurJava.LoopAndRecursion.Sort;
 
-class BinarySearch2 {
+class BinarySearchIter {
     // поиск принимает массив и число для поиска
     static void search(int[] arr, int t) {
         int low = 0;
