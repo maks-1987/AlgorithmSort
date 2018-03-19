@@ -1,4 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
+package ProcedurJava.Sort;
 
 /**
  * Сортировка вставками - есть массив, в котором через к-шагов будет

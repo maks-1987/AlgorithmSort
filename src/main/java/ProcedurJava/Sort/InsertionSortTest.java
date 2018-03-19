@@ -1,4 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
+package ProcedurJava.Sort;
 
 import java.util.Arrays;
 

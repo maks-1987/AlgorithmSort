@@ -1,4 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
+package ProcedurJava.Sort;
 
 class BubbleSort {
     static void sort(int[] arr) {

@@ -1,6 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
-
-import ProcedurJava.LoopAndRecursion.Sort.BubbleSort;
+package ProcedurJava.Sort;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
+package ProcedurJava.Sort;
 /* В стандартной библиотеке Java уже имеется реализация двоичного
 поиска (который при этом может быть расширен через интерфейс Comparator).
 Для объектных типов данных общий вид метода выглядит так:

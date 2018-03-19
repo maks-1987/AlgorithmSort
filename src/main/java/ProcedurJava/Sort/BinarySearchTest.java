@@ -1,4 +1,4 @@
-package ProcedurJava.LoopAndRecursion.Sort;
+package ProcedurJava.Sort;
 
 class BinarySearchTest {
     public static void main(String[] args) {
