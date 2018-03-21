@@ -1,7 +1,7 @@
 package ProcedurJava.Sort;
 
 class QuickSort {
-    static int ARRAY_LENGTH = 30;
+    static int ARRAY_LENGTH = 10;
     private static int[] array = {2,1,0,3,9,5,7,12,2,77};
 
     static void printArray() {
@@ -10,12 +10,11 @@ class QuickSort {
         }
         System.out.println(array[ARRAY_LENGTH-1]);
     }
-
     static void quickSort() {
-        int startIndex = 0; int endIndex = ARRAY_LENGTH - 1;
+        int startIndex = 0;
+        int endIndex = ARRAY_LENGTH - 1;
         doSort(startIndex, endIndex);
     }
-
     private static void doSort(int start, int end) {
         if (start >= end) return;
         int i = start, j = end;
@@ -27,19 +26,18 @@ class QuickSort {
             while (j > cur && (array[cur] <= array[j])) {
                 j--;
             } if (i < j) {
-                int temp = array[i]; array[i] = array[j];
+                int temp = array[i];
+                array[i] = array[j];
                 array[j] = temp;
                 if (i == cur) cur = j;
                 else if (j == cur) cur = i;
             }
         } doSort(start, cur);
         doSort(cur+1, end);
-
     }
     public static void main(String[] args) {
         printArray();
         quickSort();
         printArray();
     }
-
 }
